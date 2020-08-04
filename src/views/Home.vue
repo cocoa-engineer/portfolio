@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home" id="home">
+    <v-parallax dark height="700" src="@/assets/img/home.jpg" class>
+      <v-row align="center" justify="center">
+        <v-col class="text-center" cols="12">
+          <h1 class="display-4">Cocoa Portfolio</h1>
+        </v-col>
+      </v-row>
+    </v-parallax>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  name: "Home"
+};
 </script>
+<style scoped>
+h1 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  font-size: 100em;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+  color: aliceblue;
+}
+</style>
