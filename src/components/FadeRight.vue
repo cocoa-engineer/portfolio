@@ -1,4 +1,3 @@
-  
 <template>
   <div :class="{ fadeRight: visible }">
     <slot v-show="visible"></slot>

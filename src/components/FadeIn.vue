@@ -1,4 +1,3 @@
-
 <template>
   <div :class="{ fadeIn: visible }">
     <slot v-show="visible"></slot>
@@ -37,7 +36,7 @@ export default {
 @keyframes fadein {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(100px);
   }
   to {
     opacity: 1;

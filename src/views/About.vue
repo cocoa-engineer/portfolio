@@ -1,6 +1,6 @@
 <template>
   <div class="about" id="about">
-    <h1>About ME</h1>
+    <h1>About Me</h1>
     <v-container>
       <v-row justify="center">
         <v-col cols="12" md="auto" class="about-img">
@@ -64,19 +64,6 @@ export default {
 #about article {
   letter-spacing: 0.1em;
   line-height: 1.8;
-}
-.fadeIn {
-  animation: fadeIn 2s;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
 }
 a {
   text-decoration: none;
