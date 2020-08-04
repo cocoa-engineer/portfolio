@@ -22,7 +22,7 @@
         <v-icon>fab fa-twitter</v-icon>
       </v-btn>
     </v-row>
-    <p>© 2020 Cocoa Portfolio.</p>
+    <p>© 2020 cocoa-engineer</p>
   </div>
 </template>
 <script>
