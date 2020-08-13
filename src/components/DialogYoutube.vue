@@ -1,27 +1,27 @@
 <template>
   <div>
-    <v-dialog v-model="dialogWarikan" width="500">
+    <v-dialog v-model="dialogYoutube" width="500">
       <v-card>
-        <v-card-title>多め ni 割り勘</v-card-title>
+        <v-card-title>Youtubeまとめアプリ</v-card-title>
         <v-card-text>
-          多め、少なめで割り勘するときに便利なアプリです。
+          Youtubeの動画を、様々なジャンルから検索できるアプリです。
           <br />
           <br />開発環境
           <ul>
             <li>OS : mac</li>
-            <li>言語 : HTML, CSS, JavaScript</li>
-            <li>フレームワーク : Vue.js</li>
-            <li>インフラ : Firebase, PWA</li>
+            <li>言語 : HTML, CSS, JavaScript, Ruby</li>
+            <li>フレームワーク : Ruby on Rails, Vue.js</li>
+            <li>インフラ : AWS(ECS), Docker, CircleCI</li>
           </ul>
         </v-card-text>
         <v-card-actions>
           <a
-            href="https://ome-ni-warikan.web.app/"
+            href="https://www.youtube-matome-app.site/"
             target="_blank"
             class="btn btn-malformation"
           >アプリを見る</a>
           <v-spacer></v-spacer>
-          <v-btn color="primary" text @click="dialogWarikan = false">閉じる</v-btn>
+          <v-btn color="primary" text @click="dialogYoutube = false">閉じる</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -31,15 +31,15 @@
 export default {
   data() {
     return {
-      dialogWarikan: false
+      dialogYoutube: false
     };
   },
   methods: {
     open() {
-      this.dialogWarikan = true;
+      this.dialogYoutube = true;
     },
     close() {
-      this.dialogWarikan = false;
+      this.dialogYoutube = false;
     }
   }
 };

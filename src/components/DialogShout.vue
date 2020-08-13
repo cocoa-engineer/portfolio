@@ -11,7 +11,7 @@
             <li>OS : mac</li>
             <li>言語 : HTML, CSS, JavaScript, Ruby</li>
             <li>フレームワーク : Ruby on Rails</li>
-            <li>インフラ : Docker, CircleCI, Heroku</li>
+            <li>インフラ : Heroku, Docker, CircleCI</li>
           </ul>
         </v-card-text>
         <v-card-actions>
@@ -19,14 +19,11 @@
             href="https://sns-shout.herokuapp.com/"
             target="_blank"
             class="btn btn-malformation"
-            >アプリを見る</a
-          >
+          >アプリを見る</a>
 
           <v-spacer></v-spacer>
 
-          <v-btn color="primary" text @click="dialogShout = false"
-            >閉じる</v-btn
-          >
+          <v-btn color="primary" text @click="dialogShout = false">閉じる</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>

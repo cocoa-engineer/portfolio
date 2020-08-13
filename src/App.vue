@@ -1,16 +1,7 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <!-- スクロールしたらTopボタン表示 -->
-    <v-btn
-      v-scroll="onScroll"
-      v-show="fab"
-      fab
-      fixed
-      bottom
-      right
-      color="gray"
-      @click="toTop"
-    >
+    <v-btn v-scroll="onScroll" v-show="fab" fab fixed bottom right color="gray" @click="toTop">
       <v-icon>fas fa-angle-up</v-icon>
     </v-btn>
     <!-- Topボタンここまで -->
@@ -80,5 +71,8 @@ export default {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+#app {
+  font-family: "Noto Sans Japanese";
 }
 </style>
