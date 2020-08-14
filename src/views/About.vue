@@ -16,14 +16,11 @@
             <article>
               島根県生まれ。
               <br />フルリモートでRailsをメインとしたサーバーサイドのエンジニアとして働いています。
-              <br />趣味は<a href="https://thejunkcocoa.com/" target="_blank"
-                >音楽活動</a
-              >。
+              <br />趣味は
+              <a href="https://thejunkcocoa.com/" target="_blank">音楽活動</a>。
               <br />現在、フロントエンドやクラウド関連の副業案件を探しています。
-              <br />お仕事のご依頼・ご相談等につきましては、<a
-                @click="$vuetify.goTo('#contact', options)"
-                >こちら</a
-              >から。
+              <br />お仕事のご依頼・ご相談等につきましては、
+              <a @click="$vuetify.goTo('#contact', options)">こちら</a>から。
             </article>
           </FadeLeft>
         </v-col>
@@ -37,7 +34,7 @@ import FadeLeft from "@/components/FadeLeft";
 export default {
   data() {
     return {
-      imageURL: require("@/assets/img/me.jpg")
+      imageURL: require("@/assets/img/me.png")
     };
   },
   components: {
