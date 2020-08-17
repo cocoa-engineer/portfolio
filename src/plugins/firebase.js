@@ -1,14 +1,14 @@
 import firebase from "firebase";
 
 const config = {
-  apiKey: "AIzaSyCJ3v9zgZQ07KchvK1Nz-TOvxaujyPb5ng",
-  authDomain: "cocoa-portfolio-96f55.firebaseapp.com",
-  databaseURL: "https://cocoa-portfolio-96f55.firebaseio.com",
-  projectId: "cocoa-portfolio-96f55",
-  storageBucket: "cocoa-portfolio-96f55.appspot.com",
-  messagingSenderId: "941306769028",
-  appId: "1:941306769028:web:d14c1f417cb2cb03121cd1",
-  measurementId: "G-QEF3XCJYJF"
+  apiKey: process.env.VUE_APP_API_KEY,
+  authDomain: process.env.VUE_APP_AUTH_DOMAIN,
+  databaseURL: process.env.VUE_APP_DATABASE_URL,
+  projectId: process.env.VUE_APP_PROJECT_ID,
+  storageBucket: process.env.VUE_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.VUE_APP_MESSAGING_SENDER_ID,
+  appId: process.env.VUE_APP_APP_ID,
+  measurementId: process.env.VUE_APP_MEASUREMENT_ID
 };
 firebase.initializeApp(config);
 export const functions = firebase.functions();
