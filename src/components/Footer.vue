@@ -22,7 +22,7 @@
         <v-icon>fab fa-twitter</v-icon>
       </v-btn>
     </v-row>
-    <p>© 2020 cocoa-engineer</p>
+    <p>© 2021 cocoa-engineer</p>
   </div>
 </template>
 <script>

@@ -1,6 +1,6 @@
 <template>
   <div class="home" id="home">
-    <v-parallax dark height="700" src="@/assets/img/home.jpg" class>
+    <v-parallax dark height="700" src="" class>
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
           <h1>Cocoa Portfolio</h1>
@@ -16,6 +16,9 @@ export default {
 };
 </script>
 <style scoped>
+#home {
+  background: #252525;
+}
 h1 {
   font-size: 5em;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);

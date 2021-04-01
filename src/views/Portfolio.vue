@@ -48,25 +48,6 @@
           </v-col>
           <v-col cols="12" md="4">
             <div class="imgWrap">
-              <v-card @click="showDialogShout()">
-                <v-img :src="shoutimage" height="225px">
-                  <v-card-title class="title gray--text justify-center">
-                    <v-text>
-                      <p class="mt-0 subheading font-weight-bold">Shout</p>
-                      <div class="description">
-                        <p
-                          class="ma-0 body-1 font-weight-thin font-italic text-left"
-                        >心の声を思いっきり叫ぶアプリです。</p>
-                      </div>
-                    </v-text>
-                  </v-card-title>
-                </v-img>
-                <shout-dialog ref="dialogShout"></shout-dialog>
-              </v-card>
-            </div>
-          </v-col>
-          <v-col cols="12" md="4">
-            <div class="imgWrap">
               <v-card @click="showDialogPortfolio()">
                 <v-img :src="siteimage" height="225px">
                   <v-card-title class="title gray--text justify-center">
@@ -87,7 +68,6 @@
 <script>
 import DialogYoutube from "@/components/DialogYoutube.vue";
 import DialogWarikan from "@/components/DialogWarikan.vue";
-import DialogShout from "@/components/DialogShout.vue";
 import DialogPortfolio from "@/components/DialogPortfolio.vue";
 export default {
   name: "portfolio",
@@ -99,7 +79,6 @@ export default {
       dialogPortfolio: false,
       youtubeimage: require("@/assets/img/youtube.png"),
       warikanimage: require("@/assets/img/warikan.png"),
-      shoutimage: require("@/assets/img/shout.png"),
       siteimage: require("@/assets/img/home.jpg"),
       transparent: "rgba(0, 0, 0, 0)"
     };
@@ -107,7 +86,6 @@ export default {
   components: {
     youtubeDialog: DialogYoutube,
     warikanDialog: DialogWarikan,
-    shoutDialog: DialogShout,
     poDialog: DialogPortfolio
   },
   methods: {
@@ -116,9 +94,6 @@ export default {
     },
     showDialogWarikan() {
       this.$refs.dialogWarikan.open();
-    },
-    showDialogShout() {
-      this.$refs.dialogShout.open();
     },
     showDialogPortfolio() {
       this.$refs.dialogPortfolio.open();

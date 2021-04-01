@@ -32,16 +32,12 @@
                           >JavaScript
                         </li>
                         <li>
-                          <v-avatar size="36"> <img :src="jqicon" /> </v-avatar
-                          >jQuery
-                        </li>
-                        <li>
                           <v-avatar size="36"> <img :src="vueicon" /> </v-avatar
                           >Vue.js
                         </li>
                         <li>
-                          <v-avatar size="36"> <img :src="vueicon" /> </v-avatar
-                          >Vuex
+                          <v-avatar size="36"> <img :src="reacticon" /> </v-avatar
+                          >React
                         </li>
                       </ul>
                     </v-text>
@@ -143,8 +139,8 @@ export default {
       htmlicon: require("@/assets/img/icon/html.png"),
       cssicon: require("@/assets/img/icon/css.png"),
       jsicon: require("@/assets/img/icon/js.png"),
-      jqicon: require("@/assets/img/icon/jq.png"),
       vueicon: require("@/assets/img/icon/vue.png"),
+      reacticon: require("@/assets/img/icon/react.png"),
       fbicon: require("@/assets/img/icon/firebase.png"),
       cpicon: require("@/assets/img/icon/aws-certified-cloud-practitioner.png"),
       saicon: require("@/assets/img/icon/aws-certified-solutions-architect-associate.png"),
